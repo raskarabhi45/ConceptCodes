@@ -3,7 +3,6 @@ using namespace std;
 //public private
 class Demo
 {
-    int i;
     public:
     int x;
 
@@ -13,14 +12,12 @@ class Demo
     public:
     Demo() //constructor should be always in public section
     {
-         x=10;
-         y=20;
-        i=30;
+        int x=10;
+        int y=20;
     }
     void fun()
         {
             cout<<"Inside public fun\n";
-            cout<<y;  //allowed
         }
 private:
 void gun()
@@ -34,13 +31,5 @@ void gun()
 
 int main()
 {
-    Demo obj;
-    cout<<obj.x<<"\n";
-    //cout<<obj.y<<"\n"; error
-    //cout<<obj.i<<"\n";error
-    obj.fun();
-    //obj.gun();error
-    
-    
     return 0;
 }
